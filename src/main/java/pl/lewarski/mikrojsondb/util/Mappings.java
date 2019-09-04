@@ -6,5 +6,6 @@ public class Mappings {
     }
 
     public static final String LIST_ALL_NAMES = "list";
+    public static final String START_PATH = "/";
     public static final String ADD_NEW_NAME = "add";
 }

@@ -25,7 +25,7 @@ public class ApiController {
 
     private NameRepository nameRepository;
 
-    @GetMapping(Mappings.LIST_ALL_NAMES)
+    @GetMapping({Mappings.LIST_ALL_NAMES, Mappings.START_PATH})
     public ResponseEntity<ResponseDto> listAll() {
         log.info("GET /{}", Mappings.LIST_ALL_NAMES);
         List<NameDto> nameDtoList = new ArrayList<>();
